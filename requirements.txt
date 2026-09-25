@@ -1,0 +1,25 @@
+# --- Web framework & server ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# --- Database ---
+sqlalchemy==2.0.35
+pydantic==2.9.2
+
+# --- Data handling ---
+pandas==2.2.2
+numpy==1.26.4
+
+# --- Machine learning (for demand/price forecasting model) ---
+scikit-learn==1.5.1
+joblib==1.4.2
+
+# --- Report generation ---
+openpyxl==3.1.5
+reportlab==4.2.2
+
+# --- File uploads / forms ---
+python-multipart==0.0.9
+
+# --- Environment variables ---
+python-dotenv==1.0.1
