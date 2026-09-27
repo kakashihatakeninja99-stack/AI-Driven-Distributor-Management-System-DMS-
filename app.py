@@ -83,7 +83,12 @@ sales = Table(
     Column("unit_price", Float, nullable=False),
     Column("sale_date", String, nullable=False),
 )
-metadata.create_all(engine)
+try:
+    metadata.create_all(engine)
+except Exception as e:
+    st.error("Could not connect to the database. Real error below:")
+    st.code(str(e))
+    st.stop()
 
 
 # ---------------------------------------------------------------------
